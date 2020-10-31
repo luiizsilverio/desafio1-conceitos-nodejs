@@ -57,7 +57,7 @@ app.delete("/repositories/:id", (request, response) => {
         //400 = Bad Request      
     }
 
-    repositories.splice(indiceRep, 1)  //remove 1 projeto a partir de idProj
+    repositories.splice(indiceRep, 1)  //remove 1 repositório a partir de indiceRep
     
     return response.status(204).send(); //204 = No Content   
 });
